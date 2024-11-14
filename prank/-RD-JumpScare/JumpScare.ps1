@@ -31,12 +31,12 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/black_img.jpg"
+$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/Black.png"
 
 $i = -join($image,"?dl=1")
-iwr $i -O $env:TMP\i.jpg
+iwr $i -O $env:TMP\i.png
 
-iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/black_img.jpg?dl=1 -O $env:TMP\i.jpg
+iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/Black.png?dl=1 -O $env:TMP\i.png
 
 # Download wav file; replace link to $wav to add your own sound
 
@@ -69,8 +69,8 @@ Function Set-WallPaper {
     Provide wallpaper style (Example: Fill, Fit, Stretch, Tile, Center, or Span)
   
     .EXAMPLE
-    Set-WallPaper -Image "C:\Wallpaper\Default.jpg"
-    Set-WallPaper -Image "C:\Wallpaper\Background.jpg" -Style Fit
+    Set-WallPaper -Image "C:\Wallpaper\Default.png"
+    Set-WallPaper -Image "C:\Wallpaper\Background.png" -Style Fit
   
 #>
 
@@ -175,7 +175,7 @@ $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -
 #----------------------------------------------------------------------------------------------------
 
 Pause-Script
-Set-WallPaper -Image "$env:TMP\i.jpg" -Style Center
+Set-WallPaper -Image "$env:TMP\i.png" -Style Center
 Play-wav
 
 #----------------------------------------------------------------------------------------------------
