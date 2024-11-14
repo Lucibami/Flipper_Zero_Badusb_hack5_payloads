@@ -38,12 +38,12 @@ iwr $i -O $env:TMP\i.jpg
 
 iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/black_img.jpg?dl=1 -O $env:TMP\i.jpg
 
-# Download mp3 file; replace link to $mp3 to add your own sound
+# Download wav file; replace link to $wav to add your own sound
 
-$mp3 = "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/door_sound.mp3?raw=true"
+$wav = "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/door_sound2.wav?raw=true"
 
-$w = -join($mp3,"?dl=1")
-iwr $w -O $env:TMP\s.mp3
+$w = -join($wav,"?dl=1")
+iwr $w -O $env:TMP\s.wav
 
 
 
@@ -160,11 +160,11 @@ $o=New-Object -ComObject WScript.Shell
 <#
 
 .NOTES 
-	This is to play the mp3 file
+	This is to play the wav file
 #>
 
-function Play-mp3{
-$Playmp3=New-Object System.Media.SoundPlayer;$Playmp3.SoundLocation="$env:TMP\s.mp3";$Playmp3.playsync()
+function Play-wav{
+$Playwav=New-Object System.Media.SoundPlayer;$Playwav.SoundLocation="$env:TMP\s.wav";$Playwav.playsync()
 }
 
 #----------------------------------------------------------------------------------------------------
@@ -176,7 +176,7 @@ $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -
 
 Pause-Script
 Set-WallPaper -Image "$env:TMP\i.jpg" -Style Center
-Play-mp3
+Play-wav
 
 #----------------------------------------------------------------------------------------------------
 
