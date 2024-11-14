@@ -31,12 +31,12 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/raw/main/prank/-RD-JumpScare/Black.png"
+$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/raw/main/prank/-RD-JumpScare/solid_black.jpg"
 
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
 
-iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/Black.png?dl=1 -O $env:TMP\i.png
+iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/raw/main/prank/-RD-JumpScare/solid_black.jpg?dl=1 -O $env:TMP\i.png
 
 # Download wav file; replace link to $wav to add your own sound
 
