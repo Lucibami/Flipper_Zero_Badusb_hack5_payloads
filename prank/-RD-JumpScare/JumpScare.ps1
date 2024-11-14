@@ -40,7 +40,7 @@ iwr https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/pra
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/abf96ddfbda1f91f5231f178b1e117e180d4274c/prank/-RD-JumpScare/door_sound.mp3"
+$wav = "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/door_sound.mp3"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.mp3
