@@ -31,7 +31,7 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/blob/main/prank/-RD-JumpScare/Black.png"
+$image =  "https://github.com/Lucibami/Flipper_Zero_Badusb_hack5_payloads/raw/main/prank/-RD-JumpScare/Black.png"
 
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
